@@ -63,6 +63,20 @@
     .designer-credit span{display:block;color:#8290a4;font-size:10px}
     .designer-credit strong{display:block;color:var(--gold2);font-size:16px;letter-spacing:.4px}
 
+
+    .presentation-feature{background:linear-gradient(135deg,#081426,#142b4a);color:#fff;position:relative;overflow:hidden}
+    .presentation-feature:before{content:"";position:absolute;width:330px;height:330px;border:1px solid #e7bd6933;border-radius:50%;right:-120px;top:-170px}
+    .presentation-inner{position:relative;z-index:1;max-width:900px;margin:auto;text-align:center}
+    .presentation-inner .kicker{color:var(--gold2)}
+    .presentation-inner h2{color:#fff;font-size:clamp(25px,4vw,40px);line-height:1.55;margin:12px 0}
+    .presentation-inner h2 span{color:var(--gold2)}
+    .presentation-inner p{color:#c4cfdd;font-size:14px;line-height:2;max-width:780px;margin:12px auto}
+    .presentation-points{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:28px 0}
+    .presentation-point{padding:17px 13px;border:1px solid #ffffff20;background:#ffffff0b;border-radius:15px;color:#e8edf5;font-size:12px;line-height:1.9}
+    .presentation-point b{display:block;color:var(--gold2);font-size:14px;margin-bottom:5px}
+    .presentation-feature .btn{margin-top:8px}
+    @media(max-width:650px){.presentation-points{grid-template-columns:1fr}.presentation-inner p{font-size:12px}}
+
   </style>
 </head>
 <body>
@@ -70,7 +84,7 @@
   <header>
     <nav class="container">
       <a class="brand" href="#home"><span class="brand-mark">W</span><span>MOHAD | طراحی وب<small>MOHAD WEB DESIGN AGENCY</small></span></a>
-      <div class="navlinks"><a href="#services">خدمات</a><a href="#why">چرا وب‌سایت؟</a><a href="#process">مراحل کار</a><a href="#portfolio">نمونه‌کارها</a></div>
+      <div class="navlinks"><a href="#services">خدمات</a><a href="#web-presentations">ارائه‌های وبی</a><a href="#why">چرا وب‌سایت؟</a><a href="#process">مراحل کار</a><a href="#portfolio">نمونه‌کارها</a></div>
       <a class="btn btn-gold" href="#contact">سفارش طراحی سایت ↗</a>
     </nav>
   </header>
@@ -106,6 +120,23 @@
           <article class="service-card"><div class="service-img"><img loading="lazy" src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=700&q=80" alt="هتل و گردشگری"><span class="service-number">07</span></div><div class="service-body"><h3>هتل‌ها و گردشگری</h3><p>معرفی اتاق‌ها، امکانات، جاذبه‌ها و درخواست رزرو.</p><span class="en">HOTELS & TRAVEL</span></div></article>
           <article class="service-card"><div class="service-img"><img loading="lazy" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=700&q=80" alt="نمونه کار خلاقانه" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=700&q=80'"><span class="service-number">08</span></div><div class="service-body"><h3>پورتفولیو و وب‌سایت شخصی</h3><p>رزومه آنلاین، معرفی مهارت‌ها، دستاوردها و نمونه‌کارها.</p><span class="en">PORTFOLIO & PERSONAL</span></div></article>
         </div>
+      </div>
+    </section>
+
+
+    <section class="section presentation-feature" id="web-presentations">
+      <div class="container presentation-inner">
+        <div class="kicker">A NEW WAY TO PRESENT YOUR IDEAS</div>
+        <h2>آیا می‌دانستید ارائه‌ی شما می‌تواند<br><span>فراتر از یک فایل PDF یا اسلاید معمولی</span> باشد؟</h2>
+        <p>تصور کنید به‌جای یک فایل ساده، ارائه‌ای اختصاصی داشته باشید که به شکل یک وب‌سایت زیبا و تعاملی طراحی شده باشد؛ فضایی که در آن می‌توانید موضوع خود را با بخش‌بندی دلخواه، تصاویر، رنگ‌ها، انیمیشن‌ها و جلوه‌های بصری جذاب توضیح دهید.</p>
+        <p>در ارائه‌ی وب‌محور، محدود به قالب‌های تکراری نیستید. می‌توانید ظاهر، ساختار و حال‌وهوای ارائه را مطابق سلیقه و موضوع خودتان انتخاب کنید؛ از پروژه‌های درسی و سمینارهای دانشگاهی گرفته تا معرفی طرح‌ها، گزارش‌ها و ایده‌های خلاقانه.</p>
+        <div class="presentation-points">
+          <div class="presentation-point"><b>طراحی اختصاصی</b>رنگ‌بندی، فونت، چیدمان و فضای بصری مطابق سلیقه‌ی شما</div>
+          <div class="presentation-point"><b>تجربه‌ی تعاملی</b>بخش‌های منظم، تصاویر، حرکت‌ها و امکان گشت‌وگذار در محتوا</div>
+          <div class="presentation-point"><b>قابل مشاهده در موبایل</b>ارائه‌ی آنلاین و دسترسی آسان از طریق یک لینک</div>
+        </div>
+        <p>ایده‌تان را برای ما بفرستید؛ ما آن را به یک تجربه‌ی ارائه‌ی دیجیتال، شیک و به‌یادماندنی تبدیل می‌کنیم.</p>
+        <a class="btn btn-gold" href="https://wa.me/93794263468?text=سلام،%20برای%20ساخت%20یک%20ارائه%20وبی%20و%20تعاملی%20مشاوره%20می‌خواهم." target="_blank" rel="noopener noreferrer">سفارش طراحی ارائه‌ی وب‌محور ↗</a>
       </div>
     </section>
 
@@ -149,7 +180,11 @@
           <div><strong>Cosmo Explore</strong><small>Creative Website • تجربه تعاملی نجوم و فضا</small>
           <a class="portfolio-link" href="https://mohadesahaidari.github.io/Cosmo-Explore-/" target="_blank" rel="noopener noreferrer">مشاهده وب‌سایت ↗</a></div></article>
       </div>
-      <p class="portfolio-note">این بخش به‌مرور با نمونه‌کارهای آنلاین‌شاپ، آموزشی، شرکتی، رستورانت، کلینیک و پروژه‌های دیگر تکمیل خواهد شد.</p>
+
+        <article class="portfolio-tile"><img loading="lazy" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=80" alt="وب‌سایت رستورانت">
+          <div><strong>وب‌سایت رستورانت</strong><small>Restaurant Website • معرفی رستورانت و منو</small>
+          <a class="portfolio-link" href="https://mohadesahaidari.github.io/Restaurant-/" target="_blank" rel="noopener noreferrer">مشاهده وب‌سایت ↗</a></div></article>
+      <p class="portfolio-note">این نمونه‌ها بخشی از پروژه‌های طراحی‌شده در MOHAD هستند؛ نمونه‌های تازه نیز به‌مرور اضافه خواهند شد.</p>
       </div>
     </section>
 
