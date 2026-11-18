@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="طراحی وب‌سایت حرفه‌ای برای آنلاین‌شاپ‌ها، رستورانت‌ها، مکاتب، شرکت‌ها و کسب‌وکارهای مختلف.">
+  <meta name="theme-color" content="#091426">
+  <title>MOHAD | طراحی وب | Web Design Agency</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root{--navy:#091426;--navy2:#10213b;--gold:#e7bd69;--gold2:#f5d995;--cream:#f7f5ef;--ink:#172033;--muted:#aab4c4}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:"Vazirmatn",Tahoma,sans-serif;background:var(--cream);color:var(--ink);line-height:1.8}
+    a{text-decoration:none;color:inherit}.container{width:min(1160px,92%);margin:auto}
+    .topbar{background:#06101f;color:#d9e0ea;font-size:12px;padding:8px 0}.topbar .container{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    header{position:sticky;top:0;z-index:20;background:rgba(9,20,38,.96);backdrop-filter:blur(12px);border-bottom:1px solid #ffffff18}
+    nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px;color:white}
+    .brand{display:flex;align-items:center;gap:11px;font-weight:800;font-size:17px}.brand-mark{width:42px;height:42px;border:1px solid var(--gold);border-radius:13px;display:grid;place-items:center;color:var(--gold);font-size:22px;font-weight:900}
+    .brand small{display:block;color:#aab4c4;font-size:10px;letter-spacing:1.5px;direction:ltr;text-align:right}
+    .navlinks{display:flex;align-items:center;gap:25px;font-size:13px;color:#d8deea}.navlinks a:hover{color:var(--gold)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:999px;padding:12px 22px;font-weight:700;font-size:13px;transition:.25s;border:1px solid transparent}
+    .btn-gold{background:linear-gradient(135deg,var(--gold2),var(--gold));color:#101827;box-shadow:0 9px 25px #e7bd6930}.btn-gold:hover{transform:translateY(-3px);box-shadow:0 13px 30px #e7bd6950}
+    .btn-outline{border-color:#ffffff45;color:white}.btn-outline:hover{border-color:var(--gold);color:var(--gold)}
+    .hero{position:relative;overflow:hidden;background:radial-gradient(circle at 15% 20%,#24436d 0,transparent 34%),linear-gradient(120deg,#071222,#102442 65%,#0a172a);color:white;padding:86px 0 78px}
+    .hero:after{content:"";position:absolute;width:430px;height:430px;border:1px solid #e7bd6930;border-radius:50%;left:-180px;bottom:-270px;box-shadow:0 0 0 35px #e7bd6908,0 0 0 75px #e7bd6906}
+    .hero-grid{display:grid;grid-template-columns:1.03fr .97fr;align-items:center;gap:55px;position:relative;z-index:1}
+    .eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--gold2);font-size:12px;font-weight:700;letter-spacing:.5px}
+    .eyebrow:before{content:"";width:27px;height:1px;background:var(--gold)}
+    h1{font-size:clamp(34px,5vw,58px);line-height:1.35;margin:18px 0 15px;font-weight:900;letter-spacing:-1.5px}
+    h1 span{color:var(--gold)}.hero p{color:#c5cfdd;font-size:15px;max-width:550px;margin:0 0 27px}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap}.hero-note{display:flex;gap:18px;flex-wrap:wrap;margin-top:30px;color:#c7d0dd;font-size:11px}.hero-note span:before{content:"✓";color:var(--gold);font-weight:900;margin-left:7px}
+    .hero-visual{position:relative;min-height:400px}.hero-photo{position:absolute;inset:0 10% 0 0;border-radius:28px;overflow:hidden;border:1px solid #ffffff30;box-shadow:0 30px 80px #0007}
+    .hero-photo img{width:100%;height:100%;object-fit:cover;filter:brightness(.78)}
+    .hero-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#071222c9,transparent 60%)}
+    .floating-card{position:absolute;z-index:2;background:#fff;color:var(--ink);border-radius:17px;padding:15px 18px;box-shadow:0 18px 45px #0004}
+    .floating-card.one{bottom:25px;right:0;width:190px}.floating-card.two{top:28px;left:-10px;width:170px}
+    .floating-card strong{display:block;font-size:14px}.floating-card small{color:#687386;font-size:10px}.mini-stars{color:#d59e37;letter-spacing:3px}
+    .section{padding:82px 0}.section-head{text-align:center;max-width:700px;margin:0 auto 38px}.kicker{color:#b18437;font-weight:800;font-size:11px;letter-spacing:1.5px;direction:ltr}.section h2{font-size:clamp(26px,3.5vw,39px);line-height:1.4;margin:8px 0 10px;color:#101c30}.section-head p{color:#697386;font-size:14px;margin:0}
+    .services{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    .service-card{background:white;border-radius:19px;overflow:hidden;border:1px solid #e9e6de;box-shadow:0 8px 28px #1b2a3b0b;transition:.28s}
+    .service-card:hover{transform:translateY(-7px);box-shadow:0 18px 38px #1b2a3b18}
+    .service-img{height:175px;overflow:hidden;position:relative}.service-img img{width:100%;height:100%;object-fit:cover;transition:.5s}.service-card:hover img{transform:scale(1.07)}
+    .service-number{position:absolute;top:12px;right:12px;background:#091426df;color:var(--gold2);border:1px solid #e7bd6970;border-radius:9px;padding:3px 9px;font-size:11px;direction:ltr}
+    .service-body{padding:17px 17px 19px}.service-body h3{font-size:15px;margin:0 0 4px;color:#14223a}.service-body p{font-size:11px;color:#778194;margin:0 0 12px;min-height:42px}.en{display:block;direction:ltr;text-align:right;font-family:Arial,sans-serif;font-size:10px;color:#b18437;letter-spacing:.3px}
+    .learn{font-size:11px;font-weight:800;color:#9b712c}.learn span{margin-right:5px}
+    .dark-band{background:linear-gradient(120deg,#081426,#142b4a);color:white;padding:75px 0;position:relative;overflow:hidden}.dark-band:after{content:"";position:absolute;width:370px;height:370px;border:1px solid #e7bd6930;border-radius:50%;left:-130px;top:-220px}
+    .why-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center;position:relative;z-index:1}.dark-band h2{font-size:34px;line-height:1.45;margin:8px 0 14px}.dark-band h2 span{color:var(--gold)}.dark-band p{color:#bdc8d7;font-size:13px}
+    .benefits{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-top:24px}.benefit{display:flex;gap:11px;align-items:center;background:#ffffff0b;border:1px solid #ffffff14;border-radius:13px;padding:12px;font-size:12px}.benefit i{font-style:normal;color:var(--gold);font-size:18px}
+    .why-image{height:360px;border-radius:25px;overflow:hidden;border:1px solid #ffffff2b}.why-image img{width:100%;height:100%;object-fit:cover}
+    .process{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.step{background:white;border:1px solid #e9e6de;border-radius:17px;padding:22px 18px}.step b{display:grid;place-items:center;width:39px;height:39px;border-radius:12px;background:#fff4db;color:#9b712c;font-size:15px;margin-bottom:13px}.step h3{font-size:14px;margin:0 0 5px}.step p{font-size:11px;color:#778194;margin:0}
+    .portfolio{background:#eeeae1}.portfolio-grid{display:grid;grid-template-columns:1.2fr .8fr .8fr;gap:15px}.portfolio-tile{height:235px;position:relative;border-radius:18px;overflow:hidden;background:#14233a}.portfolio-tile img{width:100%;height:100%;object-fit:cover;opacity:.78;transition:.4s}.portfolio-tile:hover img{transform:scale(1.05);opacity:.95}.portfolio-tile div{position:absolute;bottom:0;right:0;left:0;padding:35px 17px 15px;color:white;background:linear-gradient(transparent,#071222e8)}.portfolio-tile strong{font-size:14px;display:block}.portfolio-tile small{font-size:10px;color:#e1e6ef}
+    .cta{background:linear-gradient(120deg,#10213b,#071426);color:white;border-radius:25px;padding:48px 30px;text-align:center;position:relative;overflow:hidden}.cta h2{color:white;margin:0 0 8px}.cta p{color:#bdc8d7;font-size:13px;margin:0 auto 22px;max-width:580px}
+    footer{background:#06101f;color:#c2ccda;padding:45px 0 20px}.footer-grid{display:grid;grid-template-columns:1.2fr .8fr .8fr;gap:35px}.footer-grid h3{color:white;font-size:14px;margin:0 0 13px}.footer-grid p,.footer-grid a{font-size:11px;color:#aab5c5}.footer-grid a{display:block;margin:7px 0}.footer-grid a:hover{color:var(--gold)}.copyright{border-top:1px solid #ffffff17;margin-top:30px;padding-top:16px;text-align:center;color:#77869a;font-size:10px;direction:ltr}
+    @media(max-width:900px){.services{grid-template-columns:repeat(2,1fr)}.hero-grid{gap:28px}.navlinks{gap:13px}.process{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:650px){.topbar .container{justify-content:center}.navlinks{display:none}.hero{padding:60px 0}.hero-grid,.why-grid{grid-template-columns:1fr}.hero-visual{min-height:310px;margin-top:15px}.hero-photo{inset:0 7% 0 0}.floating-card.two{left:0}.section{padding:62px 0}.services{gap:11px}.service-img{height:130px}.service-body{padding:13px}.service-body h3{font-size:13px}.service-body p{font-size:10px;min-height:50px}.why-image{height:260px}.portfolio-grid{grid-template-columns:1fr 1fr}.portfolio-tile:first-child{grid-column:span 2}.portfolio-tile{height:180px}.footer-grid{grid-template-columns:1fr 1fr}.footer-grid>div:first-child{grid-column:span 2}.cta{padding:38px 18px}}
+    @media(max-width:390px){.services{grid-template-columns:1fr 1fr}.service-img{height:112px}.process{gap:10px}.step{padding:15px 12px}}
+  
+    .portfolio-link{display:inline-flex;margin-top:10px;padding:7px 13px;border-radius:999px;background:linear-gradient(135deg,var(--gold2),var(--gold));color:#101827;font-size:10px;font-weight:800;transition:.2s}
+    .portfolio-link:hover{transform:translateY(-2px);box-shadow:0 6px 18px #e7bd6945}
+    .portfolio-note{text-align:center;color:#788294;font-size:11px;margin:20px 0 0}
+    .designer-credit{border-top:1px solid #ffffff19;margin-top:28px;padding-top:18px;text-align:center}
+    .designer-credit span{display:block;color:#8290a4;font-size:10px}
+    .designer-credit strong{display:block;color:var(--gold2);font-size:16px;letter-spacing:.4px}
+
+  </style>
+</head>
+<body>
+  <div class="topbar"><div class="container"><span>طراحی حرفه‌ای برای رشد کسب‌وکار شما</span><span dir="ltr">CREATIVE WEB DESIGN • DIGITAL PRESENCE</span></div></div>
+  <header>
+    <nav class="container">
+      <a class="brand" href="#home"><span class="brand-mark">W</span><span>MOHAD | طراحی وب<small>MOHAD WEB DESIGN AGENCY</small></span></a>
+      <div class="navlinks"><a href="#services">خدمات</a><a href="#why">چرا وب‌سایت؟</a><a href="#process">مراحل کار</a><a href="#portfolio">نمونه‌کارها</a></div>
+      <a class="btn btn-gold" href="#contact">سفارش طراحی سایت ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">YOUR BUSINESS, ONLINE</div>
+          <h1>کسب‌وکارت را با یک<br><span>وب‌سایت حرفه‌ای</span><br>بزرگ‌تر کن.</h1>
+          <p>از یک فروشگاه اینترنتی تا وب‌سایت رستورانت، مکتب یا شرکت؛ ما برای معرفی بهتر برند و خدمات شما، تجربه‌ای زیبا، کاربردی و سازگار با موبایل طراحی می‌کنیم.</p>
+          <div class="hero-actions"><a class="btn btn-gold" href="#services">مشاهده خدمات ما <span>←</span></a><a class="btn btn-outline" href="#contact">درخواست مشاوره</a></div>
+          <div class="hero-note"><span>طراحی مدرن</span><span>نمایش عالی در موبایل</span><span>متناسب با نیاز شما</span></div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-photo"><img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1100&q=85" alt="محیط کاری طراحی وب‌سایت"></div>
+          <div class="floating-card one"><strong>ایده شما، حضور آنلاین شما</strong><small>وب‌سایتی که داستان برندتان را نشان می‌دهد.</small></div>
+          <div class="floating-card two"><div class="mini-stars">★★★★★</div><strong>طراحی با جزئیات</strong><small>Modern • Responsive • Elegant</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head"><div class="kicker">WHAT WE CREATE</div><h2>برای هر کسب‌وکار، یک راه‌حل دیجیتال</h2><p>نوع فعالیت شما هرچه باشد، می‌توانیم وب‌سایتی متناسب با هدف، مشتریان و هویت برندتان طراحی کنیم.</p></div>
+        <div class="services">
+          <article class="service-card"><div class="service-img"><img loading="lazy" src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=700&q=80" alt="فروشگاه لباس"><span class="service-number">01</span></div><div class="service-body"><h3>آنلاین‌شاپ و فروشگاه</h3><p>معرفی محصولات، دسته‌بندی، سبد خرید و ثبت سفارش آنلاین.</p><span class="en">ONLINE STORES</span></div></article>
+          <article class="service-card"><div class="service-img"><img loading="lazy" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=700&q=80" alt="رستورانت"><span class="service-number">02</span></div><div class="service-body"><h3>رستورانت و کافه</h3><p>منوی دیجیتال، معرفی غذاها، گالری تصاویر و راه سفارش.</p><span class="en">RESTAURANTS & CAFES</span></div></article>
+          <article class="service-card"><div class="service-img"><img loading="lazy" src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=700&q=80" alt="آموزش و مکتب"><span class="service-number">03</span></div><div class="service-body"><h3>مکاتب و آکادمی‌ها</h3><p>معرفی دوره‌ها، ثبت‌نام شاگردان و اطلاع‌رسانی آموزشی.</p><span class="en">SCHOOLS & ACADEMIES</span></div></article>
+          <article class="service-card"><div class="service-img"><img loading="lazy" src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=700&q=80" alt="دفتر شرکت"><span class="service-number">04</span></div><div class="service-body"><h3>شرکت‌ها و مؤسسات</h3><p>معرفی شرکت، خدمات، تیم کاری و راه‌های ارتباط با مشتری.</p><span class="en">BUSINESS WEBSITES</span></div></article>
+          <article class="service-card"><div class="service-img"><img loading="lazy" src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=700&q=80" alt="خانه و املاک"><span class="service-number">05</span></div><div class="service-body"><h3>املاک و مستغلات</h3><p>نمایش خانه‌ها، زمین‌ها، مشخصات ملک و اطلاعات تماس.</p><span class="en">REAL ESTATE</span></div></article>
+          <article class="service-card"><div class="service-img"><img loading="lazy" src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=700&q=80" alt="کلینیک صحی"><span class="service-number">06</span></div><div class="service-body"><h3>کلینیک‌ها و مراکز صحی</h3><p>معرفی خدمات، داکتران، ساعات کاری و درخواست نوبت.</p><span class="en">CLINICS & HEALTHCARE</span></div></article>
+          <article class="service-card"><div class="service-img"><img loading="lazy" src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=700&q=80" alt="هتل و گردشگری"><span class="service-number">07</span></div><div class="service-body"><h3>هتل‌ها و گردشگری</h3><p>معرفی اتاق‌ها، امکانات، جاذبه‌ها و درخواست رزرو.</p><span class="en">HOTELS & TRAVEL</span></div></article>
+          <article class="service-card"><div class="service-img"><img loading="lazy" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=700&q=80" alt="نمونه کار خلاقانه" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=700&q=80'"><span class="service-number">08</span></div><div class="service-body"><h3>پورتفولیو و وب‌سایت شخصی</h3><p>رزومه آنلاین، معرفی مهارت‌ها، دستاوردها و نمونه‌کارها.</p><span class="en">PORTFOLIO & PERSONAL</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="dark-band" id="why">
+      <div class="container why-grid">
+        <div><div class="eyebrow">WHY YOUR BUSINESS NEEDS A WEBSITE</div><h2>فقط در شبکه‌های اجتماعی نمان؛<br><span>خانه دیجیتال خودت</span> را بساز.</h2><p>وب‌سایت به مشتریان کمک می‌کند هر زمان که بخواهند اطلاعات، محصولات و خدمات شما را پیدا کنند. حضور آنلاین حرفه‌ای، معرفی کسب‌وکار شما را آسان‌تر و منظم‌تر می‌سازد.</p>
+          <div class="benefits"><div class="benefit"><i>✦</i> معرفی ۲۴ ساعته خدمات</div><div class="benefit"><i>✦</i> افزایش اعتماد مشتریان</div><div class="benefit"><i>✦</i> دسترسی آسان به اطلاعات</div><div class="benefit"><i>✦</i> رشد فرصت‌های فروش</div></div>
+        </div>
+        <div class="why-image"><img loading="lazy" src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1000&q=85" alt="تیم در حال برنامه‌ریزی پروژه دیجیتال"></div>
+      </div>
+    </section>
+
+    <section class="section" id="process">
+      <div class="container"><div class="section-head"><div class="kicker">HOW WE WORK</div><h2>از ایده تا وب‌سایت؛ قدم‌به‌قدم</h2><p>روند همکاری روشن و ساده است تا بدانید در هر مرحله چه اتفاقی می‌افتد.</p></div>
+        <div class="process">
+          <div class="step"><b>01</b><h3>شنیدن نیازهای شما</h3><p>درباره کسب‌وکار، مخاطبان و هدف وب‌سایت صحبت می‌کنیم.</p></div>
+          <div class="step"><b>02</b><h3>طرح و برنامه‌ریزی</h3><p>ساختار صفحات، ظاهر و امکانات موردنیاز مشخص می‌شود.</p></div>
+          <div class="step"><b>03</b><h3>طراحی و اجرا</h3><p>وب‌سایت ساخته و در موبایل و کامپیوتر بررسی می‌شود.</p></div>
+          <div class="step"><b>04</b><h3>تحویل و راهنمایی</h3><p>پس از بررسی نهایی، سایت تحویل داده می‌شود.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section portfolio" id="portfolio">
+      <div class="container"><div class="section-head">
+        <div class="kicker">SELECTED PROJECTS</div>
+        <h2>نمونه‌کارهای MOHAD</h2>
+        <p>برای دیدن هر پروژه روی دکمه مشاهده کلیک کنید. نمونه‌های بیشتری به‌زودی اضافه می‌شوند.</p>
+      </div>
+      <div class="portfolio-grid">
+        <article class="portfolio-tile"><img loading="lazy" src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=900&q=80" alt="فروشگاه اینترنتی">
+          <div><strong>فروشگاه اینترنتی Ruxia_SHEIN</strong><small>Online Shop • طراحی فروشگاه آنلاین</small>
+          <a class="portfolio-link" href="https://mohadesahaidari.github.io/Ruxia-_SHEIN-/" target="_blank" rel="noopener noreferrer">مشاهده وب‌سایت ↗</a></div></article>
+        <article class="portfolio-tile"><img loading="lazy" src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=900&q=80" alt="آکادمی رشد">
+          <div><strong>وب‌سایت آکادمی رشد</strong><small>Academy Website • آموزش و ثبت‌نام</small>
+          <a class="portfolio-link" href="https://academyroshd.github.io/Academy-Roshd/" target="_blank" rel="noopener noreferrer">مشاهده وب‌سایت ↗</a></div></article>
+        <article class="portfolio-tile"><img loading="lazy" src="https://images.unsplash.com/photo-1455390582262-044c15cc5d2e?auto=format&fit=crop&w=900&q=80" alt="ارائه آنلاین حقوق و حقوق بشر">
+          <div><strong>ارائه آنلاین حقوق و حقوق بشر</strong><small>Web Presentation • ارائه تعاملی به‌جای PDF</small>
+          <a class="portfolio-link" href="https://mohadesahaidari.github.io/Law-and-humans-/" target="_blank" rel="noopener noreferrer">مشاهده ارائه ↗</a></div></article>
+        <article class="portfolio-tile"><img loading="lazy" src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=900&q=80" alt="Cosmo Explore">
+          <div><strong>Cosmo Explore</strong><small>Creative Website • تجربه تعاملی نجوم و فضا</small>
+          <a class="portfolio-link" href="https://mohadesahaidari.github.io/Cosmo-Explore-/" target="_blank" rel="noopener noreferrer">مشاهده وب‌سایت ↗</a></div></article>
+      </div>
+      <p class="portfolio-note">این بخش به‌مرور با نمونه‌کارهای آنلاین‌شاپ، آموزشی، شرکتی، رستورانت، کلینیک و پروژه‌های دیگر تکمیل خواهد شد.</p>
+      </div>
+    </section>
+
+    <section class="section" id="contact"><div class="container"><div class="cta"><div class="kicker">LET'S BUILD SOMETHING GREAT</div><h2>آماده‌ای کسب‌وکارت را آنلاین کنی؟</h2><p>درباره ایده‌ات با ما صحبت کن. با هم بررسی می‌کنیم چه نوع وب‌سایتی برای کسب‌وکار تو مناسب است.</p><a class="btn btn-gold" href="https://wa.me/93794263468?text=سلام،%20برای%20طراحی%20وب‌سایت%20مشاوره%20می‌خواهم." target="_blank" rel="noopener noreferrer">برای شروع پیام بده ↗</a></div></div></section>
+  </main>
+
+  <footer><div class="container"><div class="footer-grid">
+    <div><h3>MOHAD | طراحی وب</h3><p>طراحی وب‌سایت‌های زیبا، کاربردی و متناسب با نیاز کسب‌وکارها. ایده شما می‌تواند شروع یک حضور آنلاین حرفه‌ای باشد.</p></div>
+    <div><h3>دسترسی سریع</h3><a href="#services">خدمات طراحی سایت</a><a href="#why">چرا وب‌سایت؟</a><a href="#process">مراحل همکاری</a></div>
+    <div><h3>ارتباط با ما</h3><a href="#contact">درخواست مشاوره</a><a href="mailto:haidarimohad@gmail.com">ایمیل: haidarimohad@gmail.com</a><a href="#contact">واتساپ: 0794263468</a></div>
+  </div><div class="copyright">© 2026 MOHAD WEB DESIGN AGENCY — ALL RIGHTS RESERVED</div></div><div class="designer-credit"><span>Designed &amp; Developed by</span><strong>Mohad Haidari</strong></div></footer>
+</body>
+</html>
